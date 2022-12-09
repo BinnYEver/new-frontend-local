@@ -4,7 +4,7 @@ const optionsList = document.querySelectorAll(".option");
 const add_search = document.querySelector(".add_entity");
 const min_search = document.querySelector(".min_entity");
 const parent_entity_pair = document.querySelector(".entity_pair");
-
+// const feedbackclick = document.querySelectorAll("")
 
 
 selected.addEventListener("click", () => {
