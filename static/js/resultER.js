@@ -4,6 +4,8 @@ const optionsList = document.querySelectorAll(".option");
 const add_search = document.querySelector(".add_entity");
 const min_search = document.querySelector(".min_entity");
 const parent_entity_pair = document.querySelector(".entity_pair");
+let audio_sound = document.querySelectorAll("audio");
+let but_list = document.querySelectorAll(".but");
 // const feedbackclick = document.querySelectorAll("")
 
 
@@ -42,3 +44,9 @@ min_search.addEventListener("click", () => {
 
 
 })
+console.log(but_list.length);
+for (let i = 0; i < but_list.length; i++) {
+    but_list[i].addEventListener('mouseenter', () => {
+        audio_sound[0].play();
+    });
+}
