@@ -47,6 +47,8 @@ min_search.addEventListener("click", () => {
 console.log(but_list.length);
 for (let i = 0; i < but_list.length; i++) {
     but_list[i].addEventListener('mouseenter', () => {
-        audio_sound[0].play();
+        const audio = new Audio("static/but_hover_sound.mp3");
+        audio.src = "static/but_hover_sound.mp3";
+        audio.play();
     });
 }
